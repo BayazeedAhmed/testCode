@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Caps and Hats Wholesale</title>
+</head>
+<body>
+    <header>
+        <h1>Caps and Hats Wholesale</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login" id="loginBtn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-category">
+            <h3>Caps</h3>
+            <div class="product">
+                <img src="cap1.jpg" alt="Cap 1">
+                <p>Cap 1 - $10.00</p>
+                <button onclick="addToCart('Cap 1', 10)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="cap2.jpg" alt="Cap 2">
+                <p>Cap 2 - $12.00</p>
+                <button onclick="addToCart('Cap 2', 12)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-category">
+            <h3>Hats</h3>
+            <div class="product">
+                <img src="hat1.jpg" alt="Hat 1">
+                <p>Hat 1 - $15.00</p>
+                <button onclick="addToCart('Hat 1', 15)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="hat2.jpg" alt="Hat 2">
+                <p>Hat 2 - $18.00</p>
+                <button onclick="addToCart('Hat 2', 18)">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Add more categories and products as needed -->
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLogin()">&times;</span>
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username"><br>
+            <input type="password" id="password" placeholder="Password"><br>
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Caps and Hats Wholesale. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
